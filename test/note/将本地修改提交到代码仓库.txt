@@ -1,7 +1,0 @@
-//指令快捷复制
-//将所有改动添加
-git add .
-//message 为此提交的基本信息，可以理解为注释
-git commit -m "message"
-//上传 本地分支master 到 远程分支origin
-git push -u origin master
