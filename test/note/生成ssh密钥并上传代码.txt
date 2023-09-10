@@ -1,0 +1,16 @@
+
+//Github配置ssh key的步骤
+https://blog.csdn.net/weixin_42310154/article/details/118340458
+//指令快捷复制
+//查看是否存在 id_rsa 和 id_rsa.pub 文件，如果存在，说明已经有 SSH Key
+cd ~/.ssh
+ls
+//如果不存在，执行后一直回车即可
+ssh-keygen -t rsa -C "1799087933@qq.com"
+//获取 ssh key 公钥内容（id_rsa.pub）
+cd ~/.ssh
+cat id_rsa.pub
+//复制从 ssh-rsa 到 .com 的内容粘贴到 账号-setting-SSH and GPG keys-New SSH key
+//验证设置是否成功，出现 Hi XXX ！即为成功
+ssh -T git@github.com
+
